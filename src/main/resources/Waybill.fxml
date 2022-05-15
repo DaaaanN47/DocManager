@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="402.0" prefWidth="361.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WayBillController">
+   <children>
+      <VBox fx:id="docInfoGroup" layoutX="96.0" layoutY="14.0" prefHeight="327.0" prefWidth="170.0" spacing="5.0">
+         <children>
+            <Label fx:id="userLabel" prefHeight="17.0" prefWidth="96.0" text="Пользователь" />
+            <TextField fx:id="userField" prefHeight="1.0" prefWidth="0.0" />
+            <Label fx:id="priceLabel" prefHeight="17.0" prefWidth="79.0" text="Сумма" />
+            <TextField fx:id="priceField" />
+            <Label fx:id="currencyLabel" prefHeight="17.0" prefWidth="79.0" text="Валюта" />
+            <TextField fx:id="currencyField" />
+            <Label fx:id="currencyRateLabel" prefHeight="17.0" prefWidth="79.0" text="Курс валюты" />
+            <TextField fx:id="currencyRateField" />
+            <Label fx:id="productLabel" prefHeight="17.0" prefWidth="79.0" text="Товар" />
+            <TextField fx:id="productField" />
+            <Label fx:id="amountLabel" prefHeight="17.0" prefWidth="79.0" text="Количество" />
+            <TextField fx:id="amountField" />
+         </children>
+      </VBox>
+      <Button fx:id="saveWayBillBtn" layoutX="144.0" layoutY="347.0" mnemonicParsing="false" onAction="#SaveWayBill" text="Сохранить" />
+   </children>
+</AnchorPane>

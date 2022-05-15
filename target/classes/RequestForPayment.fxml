@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="411.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RequestForPaymentController">
+   <children>
+      <VBox fx:id="docInfoGroup" layoutX="92.0" layoutY="21.0" prefHeight="323.0" prefWidth="170.0" spacing="5.0">
+         <children>
+            <Label fx:id="userLabel" prefHeight="17.0" prefWidth="96.0" text="Пользователь" />
+            <TextField fx:id="userField" prefHeight="1.0" prefWidth="0.0" />
+            <Label fx:id="counterpartyLabel" prefHeight="17.0" prefWidth="96.0" text="Контрагент" />
+            <TextField fx:id="counterpartyField" />
+            <Label fx:id="priceLabel" prefHeight="17.0" prefWidth="79.0" text="Сумма" />
+            <TextField fx:id="priceField" />
+            <Label fx:id="currencyLabel" prefHeight="17.0" prefWidth="79.0" text="Валюта" />
+            <TextField fx:id="currencyField" />
+            <Label fx:id="currencyRateLabel" prefHeight="17.0" prefWidth="79.0" text="Курс валюты" />
+            <TextField fx:id="currencyRateField" />
+            <Label fx:id="comissionLabel" prefHeight="17.0" prefWidth="79.0" text="Комиссия" />
+            <TextField fx:id="comissionField" />
+         </children>
+      </VBox>
+      <Button fx:id="saveRequestForPaymentBtn" layoutX="129.0" layoutY="344.0" mnemonicParsing="false" onAction="#saveRequestForPayment" prefHeight="25.0" prefWidth="85.0" text="Сохранить" />
+   </children>
+</AnchorPane>

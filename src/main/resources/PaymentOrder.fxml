@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="287.0" prefWidth="278.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PaymentOrderController">
+   <children>
+      <VBox layoutX="98.0" layoutY="29.0" prefHeight="172.0" prefWidth="190.0" spacing="5.0" AnchorPane.bottomAnchor="136.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="29.0">
+         <children>
+            <Label fx:id="userLabel" text="Пользователь" />
+            <TextField fx:id="userField" />
+            <Label fx:id="priceLabel" prefHeight="17.0" prefWidth="71.0" text="Сумма" />
+            <TextField fx:id="priceField" />
+            <Label fx:id="employeeLabel" prefHeight="17.0" prefWidth="77.0" text="Сотрудник" />
+            <TextField fx:id="employeeField" />
+         </children>
+      </VBox>
+      <Button fx:id="savePaymentOrderBtn" layoutX="102.0" layoutY="215.0" mnemonicParsing="false" onAction="#savePaymentOrder" text="Сохранить" />
+   </children>
+</AnchorPane>

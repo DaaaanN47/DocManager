@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="MainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="waybillBtn" layoutX="442.0" layoutY="37.0" mnemonicParsing="false" onAction="#createWayBill" prefHeight="25.0" prefWidth="109.0" text="Накладная" />
+      <Button fx:id="paymentOrderBtn" layoutX="442.0" layoutY="74.0" mnemonicParsing="false" onAction="#createPaymentOrder" prefHeight="25.0" prefWidth="109.0" text="Платежка" />
+      <Button fx:id="RequestForPaymentBtn" layoutX="442.0" layoutY="113.0" mnemonicParsing="false" onAction="#createRequestForPayment" prefHeight="25.0" prefWidth="109.0" text="Заявка на оплату" />
+      <Button fx:id="saveFileBtn" layoutX="442.0" layoutY="152.0" mnemonicParsing="false" onAction="#saveDocument" prefHeight="25.0" prefWidth="109.0" text="Сохранить" />
+      <Button fx:id="loadFileBtn" layoutX="442.0" layoutY="194.0" mnemonicParsing="false" onAction="#LoadFile" prefHeight="25.0" prefWidth="109.0" text="Загрузить" />
+      <Button fx:id="displayFileBtn" layoutX="442.0" layoutY="235.0" mnemonicParsing="false" onAction="#ShowDocument" prefHeight="25.0" prefWidth="109.0" text="Просмотр" />
+      <Button fx:id="exitBtn" layoutX="442.0" layoutY="327.0" mnemonicParsing="false" onAction="#clickCloseWindow" prefHeight="25.0" prefWidth="109.0" text="Выход" />
+      <ListView fx:id="documentList" layoutX="29.0" layoutY="20.0" prefHeight="353.0" prefWidth="313.0" />
+   </children>
+</AnchorPane>
